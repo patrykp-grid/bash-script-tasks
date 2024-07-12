@@ -62,9 +62,6 @@ select_data() {
 #   local column
 #   local value
   
-#   IFS='=' read -r column value <<< "$criteria"
-  
-#   sed -i.bak "/^* ${table_name} */,/^\*$/ {/ $column $value /d;}" "${db_name}.txt"
 #   echo "Data matching criteria '${criteria}' deleted from table '${table_name}' in database '${db_name}'."
 # }
 
